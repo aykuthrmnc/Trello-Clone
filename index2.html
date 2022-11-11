@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg bgDarkblue">
+        <div class="container-fluid">
+            <!-- First Navbar Nav -->
+            <div class="nav-item dropdown me-3">
+                <a class="nav-link text-white rounded-2 navBorder navLink" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <i class="fa-solid fa-grip"></i>
+                </a>
+                <ul class="dropdown-menu px-3 pb-4 firstDropMenu" aria-labelledby="navbarDropdown">
+                    <li class="text-center fw-light">
+                        Daha Fazla Ürün
+                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                            aria-label="Close"></button>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <p class="text-muted my-2">Mevcut Çalışma Alanı</p>
+                        <div class="d-flex">
+                            <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                            <div class="p-2 flex-fill my-auto">
+                                Trello Çalışma Alanı
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <p class="text-muted my-2">Çalışma Alanınız</p>
+                        <div class="d-flex">
+                            <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                            <div class="p-2 flex-fill my-auto">
+                                Trello Çalışma Alanı
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Navbar Brand -->
+            <a class="navbar-brand text-white" href="#">@@</a>
+
+            <button class="navbar-toggler ms-auto navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Second Navbar Nav -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown pe-lg-2">
+                        <a class="nav-link dropdown-toggle text-white rounded-2 navBorder" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Çalışma Alanları
+                        </a>
+                        <ul class="dropdown-menu px-3 pb-4 secondDropMenu" aria-labelledby="navbarDropdown">
+                            <li class="text-center fw-light">
+                                Çalışma Alanları
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <p class="text-muted my-2">Mevcut Çalışma Alanı</p>
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                                    <div class="p-2 flex-fill my-auto">
+                                        Trello Çalışma Alanı
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <p class="text-muted my-2">Çalışma Alanınız</p>
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                                    <div class="p-2 flex-fill my-auto">
+                                        Trello Çalışma Alanı
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pe-lg-2">
+                        <a class="nav-link dropdown-toggle text-white rounded-2 navBorder" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Geçmiş
+                        </a>
+                        <ul class="dropdown-menu px-3 pb-4 secondDropMenu" aria-labelledby="navbarDropdown">
+                            <li class="text-center fw-light">
+                                Sık Kullanılan Panolar
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                                    <div class="p-2 flex-fill my-auto">
+                                        Trello Çalışma Alanı
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pe-lg-2">
+                        <a class="nav-link dropdown-toggle text-white rounded-2 navBorder" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Yıldızlı
+                        </a>
+                        <ul class="dropdown-menu px-3 pb-4 secondDropMenu" aria-labelledby="navbarDropdown">
+                            <li class="text-center fw-light">
+                                Yıldızlı Panolar
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="text-center">
+                                <div>
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/300x150">
+                                </div>
+                                <div>
+                                    Hızla ve kolayca erişmek için önemli panoları favori olarak işaretleyin.
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pe-lg-2">
+                        <a class="nav-link dropdown-toggle text-white rounded-2 navBorder" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Şablonlar
+                        </a>
+                        <ul class="dropdown-menu px-3 pb-4 firstDropMenu" aria-labelledby="navbarDropdown">
+                            <li class="text-center fw-light">
+                                Daha Fazla Ürün
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <p class="text-muted my-2">Mevcut Çalışma Alanı</p>
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                                    <div class="p-2 flex-fill my-auto">
+                                        Trello Çalışma Alanı
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <p class="text-muted my-2">Çalışma Alanınız</p>
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                                    <div class="p-2 flex-fill my-auto">
+                                        Trello Çalışma Alanı
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-2 text-white navBorder navSearch" role="button">Oluştur</a>
+                    </li>
+                </ul>
+                <form id="searchForm" class="border-0 position-relative d-flex align-items-center search-form"
+                    role="search">
+                    <i class="fa-solid fa-magnifying-glass position-absolute ps-1"></i>
+                    <input id="searchArea" class="form-control ps-4 border-0 shadow-none" type="search"
+                        placeholder="Arama" aria-label="Search">
+                </form>
+            </div>
+
+            <!-- Third Navbar Nav -->
+            <div class="nav-item dropdown">
+                <a class="nav-link text-white rounded-2 navBorder navLink" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end px-3 pb-4 firstDropMenu" aria-labelledby="navbarDropdown">
+                    <li class="text-center fw-light">
+                        Bilgi
+                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                            aria-label="Close"></button>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="text-center">
+                        <div class="rounded infoArea">
+                            <a href="#" target="_blank" class="text-decoration-none text-black">
+                                <img class="img-fluid rounded" src="https://via.placeholder.com/300x150">
+                                <div class="p-1">Trello'da yeni misin? Başlama Kılavuzuna Göz At</div>
+                            </a>
+                        </div>
+
+                        <button class="link-secondary border-0 bg-transparent p-1">Yeni Bir İpucu Al</button>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="text-center row row-cols-auto justify-content-center">
+                        <a href="#" class="link-secondary p-1 infoArea rounded">Ücretler</a>
+                        <a href="#" class="link-secondary p-1 infoArea rounded">Uygulamalar</a>
+                        <a href="#" class="link-secondary p-1 infoArea rounded">Blog</a>
+                        <a href="#" class="link-secondary p-1 infoArea rounded">Gizlilik</a>
+                        <a href="#" class="link-secondary p-1 infoArea rounded">Daha Fazla...</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link text-white rounded-2 navBorder navLink" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end thirdDropMenu" aria-labelledby="navbarDropdown">
+                    <div class="text-center fw-light">
+                        Bildirimler
+                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="px-3">
+                        <div>
+                            <hr class="dropdown-divider">
+                        </div>
+                        <div>
+                            <a href="#" class="link-secondary p-1">Tümünü Görüntüle</a>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid rounded py-3"
+                                src="https://a.trellocdn.com/prgb/dist/images/taco-sleep.ee2660df9335718b1a80.svg">
+                            <h5>Bildirim Yok</h5>
+                        </div>
+                    </div>
+                    <div class="list-group border-0" role="group">
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">E-posta
+                            bildirim sıklığını
+                            değiştir.</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Masaüstü
+                            bildirimlere izin
+                            ver.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link text-white rounded-2 navBorder navLink" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end firstDropMenu" aria-labelledby="navbarDropdown">
+                    <div class="text-center fw-light">
+                        Hesap
+                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="px-3">
+                        <div>
+                            <hr class="dropdown-divider">
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <img class="img-fluid rounded-circle" src="https://via.placeholder.com/50x50">
+                                <div class="px-2">
+                                    Aykut Harmancı
+                                    <div class="text-muted" style="font-size: 0.8rem;">aykuthrmnc@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <hr class="dropdown-divider">
+                    </div>
+                    <div class="list-group border-0" role="group">
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Profil ve
+                            Görünürlük</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Etkinlik</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Kartlar</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Ayarlar</a>
+                        <div class="px-3">
+                            <hr class="dropdown-divider">
+                        </div>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Yardım</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Kısayollar</a>
+                        <div class="px-3">
+                            <hr class="dropdown-divider">
+                        </div>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Çıkış</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebars">
+            <div id="sidebar" class="d-flex flex-column text-white bgDarkblue">
+                <div class="d-flex justify-content-between align-items-center p-3">
+                    <div>
+                        <img class="img-fluid rounded" src="https://via.placeholder.com/50x50">
+                    </div>
+                    <div class="flex-grow-1 px-2">
+                        <a href="#" class="text-decoration-none">
+                            Trello Çalışma Alanı
+                        </a>
+                        <span class="text-white-50">Ücretsiz</span>
+                    </div>
+                    <button id="sidebarBtn" type="button" class="btn text-white border-0">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                </div>
+                <hr>
+                <div class="list-group border-0" role="group">
+                    <a href="#" class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction"><i
+                            class="fa-solid fa-table-columns"></i>
+                        <span class="flex-fill px-2">Panolar</span>
+                    </a>
+                    <a href="#" class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="flex-fill px-2">Üyeler</div>
+                        <button type="button" class="btn btn-sm text-white border-0">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </a>
+                    <a href="#" class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="flex-fill px-2">Ayarlar</span>
+                    </a>
+                </div>
+                <div class="list-group border-0" role="group">
+                    <div class="p-3 fw-bold">Çalışma Alanı görünümleri</div>
+                    <div class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction">
+                        <i class="fa-solid fa-table-list"></i>
+                        <div class="flex-fill px-2 fst-italic">Tablo</div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm text-white border-0 invisible itemBtn" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                aria-labelledby="navbarDropdown">
+                                <div class="text-center fw-light projectName">
+                                    Project 1
+                                    <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="px-3">
+                                    <div>
+                                        <hr class="dropdown-divider">
+                                    </div>
+                                </div>
+                                <div class="list-group border-0" role="group">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                        <div><i class="fa-solid fa-trash"></i></div>
+                                        <div class="flex-fill px-2">Görünümü Kaldır</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="flex-fill px-2 fst-italic">Takvim</div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm text-white border-0 invisible itemBtn" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                aria-labelledby="navbarDropdown">
+                                <div class="text-center fw-light projectName">
+                                    Project 1
+                                    <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="px-3">
+                                    <div>
+                                        <hr class="dropdown-divider">
+                                    </div>
+                                </div>
+                                <div class="list-group border-0" role="group">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                        <div><i class="fa-solid fa-trash"></i></div>
+                                        <div class="flex-fill px-2">Görünümü Kaldır</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="list-group border-0" role="group">
+                    <div class="p-3 d-flex align-items-center border-0 rounded-0 ddAction">
+                        <div class="flex-fill fw-bold">Panolarınız</div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm text-white border-0 invisible itemBtn" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                aria-labelledby="navbarDropdown">
+                                <div class="text-center fw-light projectName">
+                                    Project 1
+                                    <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="px-3">
+                                    <div>
+                                        <hr class="dropdown-divider">
+                                    </div>
+                                </div>
+                                <div class="list-group border-0" role="group">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                        <div class="flex-fill px-2">Panoyu kapat...</div>
+                                        <div><i class="fa-solid fa-angle-right"></i></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm text-white border-0">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="list-group-item d-flex align-items-center border-0 rounded-0 lgAction activeItem"
+                        aria-current="true">
+                        <img src="https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/57fe897232f351d530d99f5fbbc3d662/photo-1652887974251-a12a7a05a725.jpg"
+                            alt="" width="24" height="20">
+                        <div class="flex-fill px-2 projectName">Project 1</div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm text-white border-0 invisible itemBtn mx-1" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                aria-labelledby="navbarDropdown">
+                                <div class="text-center fw-light projectName">
+                                    Project 1
+                                    <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="px-3">
+                                    <div>
+                                        <hr class="dropdown-divider">
+                                    </div>
+                                </div>
+                                <div class="list-group border-0" role="group">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                        <div class="flex-fill px-2">Panoyu kapat...</div>
+                                        <div><i class="fa-solid fa-angle-right"></i></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" id="starIcon" class="btn btn-sm text-white border-0 p-0 invisible itemBtn"><i
+                                class="fa-regular fa-star"></i></a>
+                    </div>
+                </div>
+                <hr class="mt-auto">
+                <div class="text-center mb-3">
+                    <button id="premiumBtn" type="button" class="btn btn-primary text-white border-0">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Premium'u Ücretsiz Deneyin
+                    </button>
+                </div>
+            </div>
+            <div id="sidebar2" class="bgDarkblue d-none">
+                <span id="sidebarBtn2" class="btn btn-sm text-white border-0 rounded-circle mt-5 ms-1">
+                    <i class="fa-solid fa-angle-right p-1"></i>
+                </span>
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="ms-3 mt-2 w-100">
+            <div id="boardHeader" class="d-flex flex-row flex-wrap">
+                <div class="dropdown">
+                    <button class="dropdown-toggle board-header btn text-white shadow-none mx-1" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-bs-auto-close="outside">
+                        Pano
+                    </button>
+                    <div class="dropdown-menu thirdDropMenu px-3" aria-labelledby="dropdownMenuButton1">
+                        <div class="text-center fw-light">
+                            Görünümü değiştir
+                            <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr class="dropdown-divider">
+
+                        <div class="p-3 pb-0">
+                            <div class="text-center fs-4">İşinizi farklı şekillerde görün</div>
+                            <small class="text-center">Trello Premium ile ana zaman çizelgelerini, görevleri, verileri
+                                ve daha fazlasını doğrudan Trello panonuzdan görüntüleyin.
+                                Panolarınıza ek özellikler getirin ve Google Drive, Dropbox ve daha fazlası gibi
+                                uygulamalarla entegrasyon yapın.</small>
+
+                            <div class="my-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" alt="Zaman Çizelgesi view"
+                                            src="https://a.trellocdn.com/prgb/dist/images/views-upsell/timeline.1df2ef6e7cfd3af8f75b.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="fw-bold">Zaman Çizelgesi</div>
+                                        <small>Zamanı ve iş yükünü görsel olarak planlayın.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" alt="Tablo view"
+                                            src="https://a.trellocdn.com/prgb/dist/images/views-upsell/table.2678f921501e21b23b35.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="fw-bold">Tablo</div>
+                                        <small>Kartları bir çalışma tablosu gibi sıralar ve
+                                            sütunlar halinde görüntüleyin.</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" alt="Takvim view"
+                                            src="https://a.trellocdn.com/prgb/dist/images/views-upsell/calendar.fde7d53f0f2ededb3b57.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="fw-bold">Takvim</div>
+                                        <div>Tarih barındıran kartları bir takvimde görün.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" alt="Gösterge Panosu view"
+                                            src="https://a.trellocdn.com/prgb/dist/images/views-upsell/dashboard.7c8d3d1ba947aa563852.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="fw-bold">Gösterge Panosu</div>
+                                        <small>İşiniz için grafikler, görseller ve metrikler
+                                            oluşturun.</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" alt="Harita view"
+                                            src="https://a.trellocdn.com/prgb/dist/images/views-upsell/map.b57fb00e345ff64bfdd6.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="fw-bold">Harita</div>
+                                        <small>Kart konumlarını interaktif bir haritada
+                                            görselleştirin.</small>
+                                    </div>
+                                </div>
+                                <div class="text-center my-2">
+                                    <a href="#" class="btn btn-primary d-block shadow-none">Ücretsiz denemeyi başlat</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="link-secondary">Trello Premium hakkında daha fazlasını
+                                        öğrenin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projectName" class="rounded">
+                    <input type="text" id="pNEdit" class="text-center border-0 fs-4 fw-semibold mx-1 d-none">
+                    <div id="pN" class="shadow-none mx-1 text-white fs-4 fw-semibold projectName">Project 1</div>
+                </div>
+                <button id="starIcon2" type="button" class="btn text-white shadow-none mx-1 board-header"
+                    data-bs-toggle="button">
+                    <i class="fa-regular fa-star"></i>
+                </button>
+                <div class="vr m-2 text-white"></div>
+                <div class="dropdown">
+                    <button class="btn text-white shadow-none mx-1 board-header" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        Trello Çalışma Alanı
+                    </button>
+                    <div class="dropdown-menu thirdDropMenu" aria-labelledby="dropdownMenuButton1">
+                        <div class="text-center fw-light">
+                            Trello Çalışma Alanı
+                            <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="list-group border-0" role="group">
+                            <div class="px-3">
+                                <hr class="dropdown-divider">
+                            </div>
+                            <a href="#"
+                                class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Çalışma
+                                Alanını
+                                değiştir...</a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Çalışma Alanı
+                                sayfasını görüntüle</a>
+                            <div class="px-3">
+                                <hr class="dropdown-divider">
+                            </div>
+                            <a href="#"
+                                class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Trello
+                                Premium'u Deneyin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vr m-2 text-white"></div>
+                <div class="dropdown">
+                    <button class="btn text-white shadow-none mx-1 board-header" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-solid fa-user-group"></i>
+                        Çalışma Alanında görünür
+                    </button>
+                    <div class="dropdown-menu thirdDropMenu" aria-labelledby="dropdownMenuButton1">
+                        <div class="text-center fw-light">
+                            Görünürlüğü Değiştir
+                            <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="list-group border-0" role="group">
+                            <div class="px-3">
+                                <hr class="dropdown-divider">
+                            </div>
+                            <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                <div><i class="fa-solid fa-lock text-danger"></i> Özel</div>
+                                <small>Yalnızca pano üyeleri bu takımı görebilir ve düzenleyebilir.</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                <div><i class="fa-solid fa-user-group"></i> Çalışma Alanı <i
+                                        class="fa-solid fa-check fa-sm"></i></div>
+                                <small>Trello Çalışma Alanı Çalışma Alanının tüm üyeleri bu panoyu görebilir ve
+                                    düzenleyebilir.</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                <div><i class="fa-solid fa-suitcase"></i> Organizasyon</div>
+                                <small>Organizasyonun tüm üyeleri bu panoyu görebilir. Bunu etkinleştirmek için pano bir
+                                    kurumsal Çalışma Alanına eklenmelidir.</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                <div><i class="fa-solid fa-earth-americas text-success"></i> Herkese Açık</div>
+                                <small>İnternet'teki herkes (Google dahil) bu panoyu görebilir. Yalnızca pano üyeleri
+                                    düzenleyebilir.</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vr m-2 text-white"></div>
+                <div class="d-flex flex-row align-items-center">
+                    <div class="dropdown">
+                        <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-auto-close="outside">
+                            <img class="img-fluid rounded-circle mx-1"
+                                src="https://via.placeholder.com/30x30/279472/FFFFFF"
+                                style="height: 30px; width: 30px;">
+                        </a>
+                        <div class="dropdown-menu thirdDropMenu pt-0" aria-labelledby="dropdownMenuButton1">
+                            <div>
+                                <button type="button"
+                                    class="btn-close btn-close-white shadow-none position-absolute end-0 px-3 pt-3"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="row p-3 pt-4 align-items-center text-white">
+                                <div class="col-4">
+                                    <img class="img-fluid rounded-circle"
+                                        src="https://via.placeholder.com/100x100/279472/FFFFFF">
+                                </div>
+                                <div class="col-auto">
+                                    <div class="fs-5 fw-bold">
+                                        Aykut Harmancı
+                                    </div>
+                                    <small>@aykutharmanci</small>
+                                </div>
+                            </div>
+                            <div class="list-group border-0" role="group">
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    Profil bilgilerini değiştir
+                                </a>
+                                <div class="px-3">
+                                    <hr class="dropdown-divider">
+                                </div>
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    Üye'nin Pano Hareketlerini Gör
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    Yetkileri değiştir... (Yönetici)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light shadow-none mx-1">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Paylaş
+                    </button>
+                </div>
+                <div class="ms-auto d-flex flex-row">
+                    <div class="dropdown">
+                        <button class="btn text-white shadow-none mx-1 board-header" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-auto-close="outside">
+                            <i class="fa-solid fa-rocket"></i>
+                            Power-Up'lar
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end thirdDropMenu px-3"
+                            aria-labelledby="dropdownMenuButton1">
+                            <div class="text-center fw-light">
+                                Power-Up'lar
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="w-50 mx-auto my-3">
+                                <img class="img-fluid rounded"
+                                    src="https://a.trellocdn.com/prgb/dist/images/no-enabled-plugins.d7d9c50ab2371ecaa5b6.png">
+                            </div>
+                            <div class="text-center">
+                                Panolarınıza ek özellikler getirin ve Google Drive, Dropbox ve daha fazlası gibi
+                                uygulamalarla entegrasyon yapın.
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn-primary d-block shadow-none">Power-Up'lar Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn text-white shadow-none mx-1 board-header" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-auto-close="outside">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                            Otomasyon
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end thirdDropMenu"
+                            aria-labelledby="dropdownMenuButton1">
+                            <div class="text-center fw-light">
+                                Otomasyon
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="list-group border-0" role="group">
+                                <div class="px-3">
+                                    <hr class="dropdown-divider">
+                                </div>
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    <div><i class="fa-solid fa-share-nodes"></i> Kurallar</div>
+                                    <small>İşlemlere, çizelgelere veya bir kartın bitiş tarihine otomatik yanıt veren
+                                        kurallar oluşturun.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    <div><i class="fa-solid fa-suitcase"></i> Düğmeler</div>
+                                    <small>Her kartın arkasında veya panonun en üstünde özel düğmeler oluşturun.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                                    <div><i class="fa-regular fa-envelope"></i> E-posta raporları</div>
+                                    <small>Bitiş tarihi 7 gün içinde olan tüm kartların haftalık özeti gibi e-posta
+                                        raporları ayarlayın.</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vr m-2 text-white"></div>
+                    <div class="dropdown">
+                        <button class="btn text-white shadow-none mx-1 board-header" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-auto-close="outside">
+                            <i class="fa-solid fa-filter"></i>
+                            Filtre
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end thirdDropMenu px-3"
+                            aria-labelledby="dropdownMenuButton1">
+                            <div class="text-center fw-light">
+                                Filtre
+                                <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                    aria-label="Close"></button>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="my-3">
+                                <small class="form-label fw-bold">Anahtar sözcük</small>
+                                <input type="text" class="form-control shadow-none"
+                                    placeholder="Bir anahtar sözcük girin...">
+                                <small>Kartlar, üyeler, etiketler ve daha fazlasını arayın.</small>
+                            </div>
+                            <div class="my-3">
+                                <small class="form-label fw-bold">Üyeler</small>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check1">
+                                        <label class="form-check-label d-block" for="check1">
+                                            <img class="img-fluid rounded-circle mx-1"
+                                                src="https://via.placeholder.com/20x20/279472/FFFFFF">
+                                            Üye Yok
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check2">
+                                        <label class="form-check-label d-block" for="check2">
+                                            <img class="img-fluid rounded-circle mx-1"
+                                                src="https://via.placeholder.com/20x20/279472/FFFFFF">
+                                            Bana atanmış kartlar
+                                        </label>
+                                    </div>
+                                </div>
+                                <small class="form-label fw-bold">Bitiş Tarihi</small>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check3">
+                                        <label class="form-check-label d-block" for="check3">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            Tarih Yok
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check4">
+                                        <label class="form-check-label d-block" for="check4">
+                                            <img class="img-fluid rounded-circle mx-1"
+                                                src="https://via.placeholder.com/20x20/279472/FFFFFF">
+                                            Gecikmiş
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check5">
+                                        <label class="form-check-label d-block" for="check5">
+                                            <img class="img-fluid rounded-circle mx-1"
+                                                src="https://via.placeholder.com/20x20/279472/FFFFFF">
+                                            Sonraki güne
+                                        </label>
+                                    </div>
+                                </div>
+                                <small class="form-label fw-bold">Etiketler</small>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check6">
+                                        <label class="form-check-label d-block" for="check6">
+                                            <img class="img-fluid rounded-circle mx-1"
+                                                src="https://via.placeholder.com/20x20/279472/FFFFFF">
+                                            Etiket Yok
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check7">
+                                        <label class="form-check-label d-block bg-success rounded" for="check7"></label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check8">
+                                        <label class="form-check-label d-block bg-warning rounded" for="check8"></label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check9">
+                                        <label class="form-check-label d-block bg-danger rounded" for="check9"></label>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none" type="checkbox" value=""
+                                            id="check10">
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Etiketleri Seç</option>
+                                            <option class="bg-success"></option>
+                                            <option class="bg-warning"></option>
+                                            <option class="bg-danger"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                                <div class="my-3">
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Herhangi bir eşleşme</option>
+                                        <option>Tam eşleşme</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="menuButton" class="btn text-white shadow-none mx-1 board-header" type="button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        Menüyü Göster
+                    </button>
+                </div>
+            </div>
+
+            <div id="board" class="m-3">
+                <div id="sortable" class="row row-cols-auto gap-2">
+                    <div class="card px-3 py-1">
+                        <div class="row align-items-center">
+                            <div class="col fw-bold">Tamamlandı</div>
+                            <div class="col-2 text-center rounded p-2 infoArea">
+                                <button class="btn btn-sm border-0 itemBtn" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                    aria-labelledby="navbarDropdown">
+                                    <div class="text-center fw-light projectName">
+                                        Project 1
+                                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="px-3">
+                                        <div>
+                                            <hr class="dropdown-divider">
+                                        </div>
+                                    </div>
+                                    <div class="list-group border-0" role="group">
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                            <div class="flex-fill px-2">Panoyu kapat...</div>
+                                            <div><i class="fa-solid fa-angle-right"></i></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sortableList">
+                        </div>
+                        <div class="row align-items-center sortableMenu">
+                            <div class="col infoArea rounded py-2">
+                                <a href="#" class="d-block link-secondary text-decoration-none completedBtn">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Kart Ekle
+                                </a>
+                            </div>
+                            <div class="col-2 text-center rounded px-0 infoArea">
+                                <div class="dropdown">
+                                    <button class="btn border-0 text-secondary" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                        aria-labelledby="navbarDropdown" data-popper-placement="top-start"
+                                        style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(0px, -27.2px, 0px);">
+                                        <div class="text-center fw-light">
+                                            Takvim
+                                            <button type="button"
+                                                class="btn-close shadow-none position-absolute end-0 px-3"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="px-3">
+                                            <div>
+                                                <hr class="dropdown-divider">
+                                            </div>
+                                        </div>
+                                        <div class="list-group border-0" role="group">
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action d-flex align-items-center border-0 rounded-0 text-dark">
+                                                <div><i class="fa-solid fa-trash"></i></div>
+                                                <div class="flex-fill px-2">Görünümü Kaldır</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none sortableAdd">
+                            <textarea class="form-control shadow-none mb-2"
+                                placeholder="Bu kart için başlık giriniz..."></textarea>
+
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-primary shadow-none sortableAddBtn" type="button">
+                                    Kaydet
+                                </button>
+                                <button type="button" class="btn-close shadow-none align-middle px-3 sortableCloseBtn"
+                                    aria-label="Close"></button>
+
+                                <button class="btn border-0 itemBtn ms-auto" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-start firstDropMenu"
+                                    aria-labelledby="navbarDropdown">
+                                    <div class="text-center fw-light">
+                                        Ayarlar
+                                        <button type="button" class="btn-close shadow-none position-absolute end-0 px-3"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="px-3">
+                                        <hr>
+                                    </div>
+                                    <div class="list-group border-0" role="group">
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Üyeler...</a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Etiketler...</a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action border-0 rounded-0 lgAction">Sıra...</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded p-0 h-100 board-header">
+                        <a id="addDiffList" href="#" class="text-white text-decoration-none d-block p-2">
+                            <i class="fa-solid fa-plus"></i>
+                            Başka Liste Ekleyin
+                        </a>
+                        <div id="addDiffList2" class="card p-1 d-none">
+                            <input class="form-control shadow-none mb-2" type="text"
+                                placeholder="Bu kart için başlık giriniz...">
+
+                            <div class="d-flex align-items-center">
+                                <button id="addDiffListBtn" class="btn btn-primary shadow-none" type="button">
+                                    Kaydet
+                                </button>
+                                <button type="button" class="btn-close shadow-none align-middle px-3 closeDiffList"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar3" class="d-flex flex-column bg-white py-3 d-none">
+            <div class="text-center fw-light">
+                Menü
+                <button id="sidebar3CloseButton" type="button"
+                    class="btn-close shadow-none position-absolute end-0 px-3" aria-label="Close"></button>
+            </div>
+            <div class="px-3">
+                <hr>
+                <div class="list-group border-0" role="group">
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">
+                                <div> Bu Pano Hakkında</div>
+                                <small>Panonuza açıklama ekleyin</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2"><img class="rounded"
+                                    src="https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/57fe897232f351d530d99f5fbbc3d662/photo-1652887974251-a12a7a05a725.jpg"
+                                    alt="" width="24" height="24"></div>
+                            <div class="col-10">
+                                Arkaplanı Değiştir
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction text-muted">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">
+                                <span class="align-middle">Özel Alanlar</span>
+                                <button id="modalFreeBtn" type="button"
+                                    class="btn btn-sm btn-primary text-dark border-0">
+                                    <i class="fa-solid fa-suitcase"></i>
+                                    Yükselt
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">Çıkartmalar</div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-ellipsis"></i></div>
+                            <div class="col-10">Daha Fazla</div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">
+                                <div>Otomasyon</div>
+                                <small>Kartları otomatikleştirme ve daha fazlası...</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">
+                                <div>Power-Up'lar</div>
+                                <small>Google Drive ve dahası...</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 lgAction">
+                        <div class="row align-items-center">
+                            <div class="col-2 text-center"><i class="fa-solid fa-lock fa-lg"></i></div>
+                            <div class="col-10">Etkinlik</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

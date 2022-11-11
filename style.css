@@ -1,0 +1,217 @@
+html {
+    font-size: 14px;
+}
+/* 
+:root{
+    --nav-height: 56px;
+} */
+
+body {
+    background-image: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/57fe897232f351d530d99f5fbbc3d662/photo-1652887974251-a12a7a05a725.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fs-8 {
+    font-size: 0.8rem;
+}
+
+.w-30 {
+    width: 30px;
+    height: 100%;
+}
+
+.bgDarkblue {
+    background-color: #243357;
+}
+
+/* Navbar */
+#navbar {
+    z-index: 99;
+}
+
+.navSearch, .board-header {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navSearch:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.board-header:hover, .board-header:focus, .board-header.show, #starIcon2:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
+}
+
+.firstDropMenu {
+    width: 20rem;
+}
+
+.thirdDropMenu {
+    width: 25rem;
+}
+
+.navLink {
+    padding: .5rem;
+}
+
+.infoArea:hover {
+    background-color: #F4F5F7;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 20rem;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+#sidebar .lgAction {
+    background-color: #243357;
+}
+
+#sidebar .activeItem {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+#sidebar a, #sidebar .lgAction {
+    color: white;
+}
+
+#sidebarBtn {
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+#sidebar2 {
+    width: 1rem;
+    min-height: calc(100vh - var(--nav-height));
+    background-color: rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+}
+
+#sidebarBtn2 {
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(16px);
+}
+
+#sidebar3 {
+    width: 30rem;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+#sidebar .lgAction button:hover, #sidebarBtn:hover, #sidebar2:hover #sidebarBtn2, #sidebar2:hover, #sidebar .ddAction button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navBorder:hover, .navBorder:focus.show, #sidebar .lgAction:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lgAction i, .ddAction i {
+    width: 1.2rem;
+}
+
+.lgAction:hover .itemBtn, .ddAction:hover .itemBtn {
+    visibility: visible !important;
+}
+
+#starIcon {
+    transition: all 0.1s ease;
+}
+
+#premiumBtn {
+    background: linear-gradient(97.78deg, #4423a3 17.5%, #aa63cb 113.39%);
+}
+
+#premiumBtn:hover {
+    background: linear-gradient(270deg, #403294 0%, #172b4d 100%);
+}
+
+#starIcon:hover{
+    transform: scale(1.2);
+}
+
+#starIcon2.active i {
+    font-weight: 700;
+    color: rgb(242, 214, 0);
+}
+
+#starIcon2:hover i {
+    transform: scale(1.2);
+    color: rgb(242, 214, 0);
+}
+
+/* Main */
+#pN:hover {
+    background-color: #ffffff52;
+    cursor: pointer;
+}
+
+#pNEdit {
+    outline: none;
+}
+
+#boardHeader .thirdDropMenu.pt-0 {
+    background-image: linear-gradient(to bottom, #0079BF 0%, #0079BF 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 7rem;
+}
+
+.form-check label {
+    height: 1.5rem;
+}
+
+/* Board */
+#sortable .card, #sortable .board-header {
+    min-width: 280px;
+    height: fit-content;
+}
+
+.rotate {
+    transform: rotate(5deg);
+}
+
+#sortable .card, .sortableList > div > button:nth-child(2):hover {
+    background-color: #EBECF0;
+}
+
+.sortableList > div > button:nth-child(2) {
+    display: none;
+}
+
+.sortableList > div:hover > button:nth-child(2) {
+    display: inline-block;
+}
+
+textarea {
+    overflow: hidden;
+}
+
+.modalDialog {
+    max-width: 1000px;
+}
+
+.modalInnerBtn {
+    transition: transform 85ms ease-in;
+}
+
+.modalInnerBtn:hover {
+    transform: translateX(5px);
+}
+
+#modalFreeBtn {
+    background: #EDDBF4;
+}
+
+@media (min-width: 992px) {
+    .secondDropMenu {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;    
+    }
+}
